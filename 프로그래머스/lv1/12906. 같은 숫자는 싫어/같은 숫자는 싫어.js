@@ -1,14 +1,3 @@
 function solution(arr) {
-    let newArr = []
-
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== arr[i - 1]) {
-            newArr.push(arr[i])
-        }
-
-    }
-
-
-
-    return newArr;
+    return arr.filter((ele, i) => ele !== arr[i - 1])
 }
